@@ -1,62 +1,36 @@
 /*Modificaciones Generales*/
-html {
-  font-size: 14px;
-}
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
-  }
-}
 .img-250{height: 250px;width: 250px;}
 
 /*Seccion Menu*/
 #menu{background-color: rgba(0, 0, 0, 0.5);}
 
 /*Seccion Cabecera*/
-#cabecera{height: 100vh;background-image: url(../asset/img/portada.png);background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;color: #fff;}
-  #cabecera-titulo{flex-direction: column;align-items: center;padding-top: 50px;}
+#cabecera{height: 100vh;background-image: url(../asset/img/ninanbu3.svg);background-repeat: no-repeat;background-size: cover;background-position: center;background-attachment: fixed;}
 
 /*Seccion Studio*/
-#studio{background-color:#468847;padding: 100px 0;}
+#studio{background-color: #2C3E50;color: #fff;padding: 100px 0;}
 
 /*Seccion About*/
-#about{background-color:#b94a48;padding: 100px 0;}
+#about{background-color:#34495E;color: #fff;padding: 100px 0;}
   #miFoto:hover{filter: grayscale(100%);}
 
+/*Seccion Habilidades*/
+#habilidades{background-color:#2C3E50;color: #fff;padding: 100px 0;}
 
-/*Imagen Divisoria1*/
-#img-tec{height: 50vh;background-image: url(../asset/img/fondo1.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;}
+/*Texto Movil*/
+#text-movil{text-align: center;background-color: #000;}
 
-/*Seccion Tecnologia*/
-#tecnologia{background-color:#f89406;padding: 100px 0;}
-  #html-text{display: none;border: 1px dashed black; background-color: rgba(251, 228, 157,.3);padding: 5px;}
-  #bots-text{display: none;border: 1px dashed black; background-color: rgba(251, 228, 157,.3);padding: 5px;}
-  #nomo-text{display: none;border: 1px dashed black; background-color: rgba(251, 228, 157,.3);padding: 5px;}
-  #html-img{padding-bottom: 10px;}
-  #bots-img{padding-bottom: 10px;}
-  #nomo-img{padding-bottom: 10px;}
-
-
-/*Imagen Divisoria2*/
-#img-pro{height: 50vh;background-image: url(../asset/img/equipo.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;}
-
-/*Seccion Proyectos*/
-#proyectos{background-color: #3a87ad;padding: 100px 0;}
- .text-img{color: white;}
- .img-color{background-color: rgb(30, 30, 30);}
+/*Seccion Blog*/
+#blog{background-color: #E74C3C;padding: 100px 0;}
+.pad-blog{padding: 10px;}
+.mar-blog{margin: 10px;}
+  #blog1{order: 1;}
+  #blog2{order: 2;}
+  #blog3{order: 3;}
+  #blog4{order: 1;}
+  #blog5{order: 2;}
+  #blog6{order: 3;}
 
 /*Seccion Footer*/
 #contacto{background-color: #000;padding-top:100px;color: #fff;}
