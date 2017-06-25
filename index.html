@@ -7,29 +7,39 @@
   <title>Ninanbu 2.0</title>
     <link rel="icon" type="image/png" href="asset/img/favicon.ico">
   <!--Apartado de CSS-->
-  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
   <!--Menu de Navegacion-->
-  <nav id="menu" class="navbar fixed-top navbar-light bg-faded ">
-      <ul class="nav justify-content-center">
+  <nav class="navbar fixed-top navbar-toggleable-md  navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="#">Ninanbu</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#studio">About</a>
+          <a class="nav-link" href="#studio">Sobre Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#tecnologia">Tecnologia</a>
+          <a class="nav-link" href="#habilidades">Tecnologias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#proyectos">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://ninanbu.com/blog" target="_blank">Blog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contacto">Contacto</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://ninanbu.com/blog" target="_blank">Blog</a>
-          </li>
       </ul>
-    </nav>
+    </div>
+  </nav>
 
   <!--Imagen de Cabecera-->
   <header id="cabecera"></header>
@@ -40,9 +50,9 @@
       <div class="row">
         <div class="col-md-12 text-center"><h1 class="display-1 text-center">Ninanbu Studio</h1></div>
         <div class="col-md-12 text-center">
-          <p>Bienvenido viajero! <strong>Ninanbu</strong> es un estudio independiente dedicado a el desarrollo de apps web/moviles ya sean personales o empresariales.
+          <p class="lead">Bienvenido viajero! <strong>Ninanbu</strong> es un estudio independiente dedicado a el desarrollo de apps web/moviles ya sean personales o empresariales.
           Como veras, aun somos un emprendimiento pequeño, pero aspiramos a crear una gran comunidad a nuestro alrededor. Espero disfruten la estadia en nuestra pagina!</p>
-          <p class="text-warning font-weight-bold">Visitanos a diario para ver mas actualizaciones de la pagina, aun estamos en construccion!</p>
+          <p class="text-warning font-weight-bold lead">Visitanos a diario para ver mas actualizaciones de la pagina, aun estamos en construccion!</p>
         </div>
       </div>
     </div>
@@ -56,8 +66,8 @@
       </div>
       <div class="row align-items-center">
         <div class="col-md-8">
-          <p>Me llamo <em>Brian</em>, tengo 27 años y actualmente me encuentro ubicado en la Ciudad de Avellaneda(Argentina-Buenos Aires). Soy un amante de la naturaleza con todo lo que la integra y fan de los videojuegos de RPG. Tengo como una meta personal a futuro sacar un videojuego para pc en <strong>Unity</strong>.</p>
-          <p>Soy un estudiante del desarrollo de aplicaciones web/moviles, con lo cual en este momento mi experiencia es basica en cuanto a Node.js y mongoDB, pero se que con el tiempo voy a estar ofreciendo mejores resultados en cuanto a la materia. Hoy dia mi fuente de trabajo es otro area que no es la tecnologia, si les interesa mi perfil les dejo mi <strong><a href="http://ninanbu.com/curriculum.pdf" target="_blank">Curriculum</a></strong>. Muchas gracias por leer!</p>
+          <p class="lead">Me llamo <em>Brian</em>, tengo 27 años y actualmente me encuentro ubicado en la Ciudad de Avellaneda(Argentina-Buenos Aires). Soy un amante de la naturaleza con todo lo que la integra y fan de los videojuegos de RPG. Tengo como una meta personal a futuro sacar un videojuego para pc en <strong>Unity</strong>.</p>
+          <p class="lead">Soy un estudiante del desarrollo de aplicaciones web/moviles, con lo cual en este momento mi experiencia es basica en cuanto a Node.js y mongoDB, pero se que con el tiempo voy a estar ofreciendo mejores resultados en cuanto a la materia. Hoy dia mi fuente de trabajo es otro area que no es la tecnologia, si les interesa mi perfil les dejo mi <strong><a href="http://ninanbu.com/curriculum.pdf" target="_blank">Curriculum</a></strong>. Muchas gracias por leer!</p>
         </div>
         <div class="col-md-4">
           <img id="miFoto" src="asset/img/iam.jpg" alt="volta" class="img-fluid img-thumbnail img-250">
@@ -66,71 +76,148 @@
     </div>
   </section>
 
-  <!--Imagen Divisoria1-->
-  <div id="img-tec"></div>
-
-  <!--Seccion de Tecnologia-->
-  <section id="tecnologia">
+  <!--Seccion de Habilidades-->
+  <section id="habilidades">
     <div class="container">
-      <div class="row justify-content-center">
-        <h3 class="display-3 text-center">Tecnologia Empleada</h3>
+      <h3 class="display-3">Habilidades</h3>
+      <hr>
+      <h4 class="text-center">Front-end</h5>
+      <h5>HTML5</h5>
+      <p class="lead">Manejo: Avanzado</p>
+      <div class="progress">
+        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
       </div>
-      <div class="row">
-        <p>Para poder dedicar mas tiempo a la programacion y menos tiempo a los estilos, decantamos en dominar un Framework de CSS popular como <strong>Bootstrap</strong> en su version 4. Por otro lado buscamos poder insertarnos en tecnologias de servidor como lo es <strong>Node.js</strong> y la Base de Datos no relacional <strong>Mongo DB</strong>.</p>
+
+      <hr>
+
+      <h5>CSS3</h5>
+      <p class="lead">Manejo: Avanzado</p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
       </div>
-      <div class="container-fluid">
-        <div id="tecno" class="row align-items-center justify-content-center">
-          <div class="col-md-3">
-            <img id="html-img" src="asset/img/html.png" alt="tecnologia" class="img-fluid">
-            <div id="html-text" class="text-center">
-              <p>Trabajo de manera fluida tanto con <em>HTML5</em> como <em>CSS3</em>, asi tambien puedo manipular <em>Javascript</em> de manera segura, pero aun me falta camino por recorrer en este ultimo.</p>
-            </div>
-          </div>
-          <div class="col-md-3 align-items-center">
-            <img id="bots-img" src="asset/img/bots.png" alt="tecnologia" class="img-fluid">
-            <div id="bots-text" class="text-center">
-              <p>No hace mucho comenze a utilizar <em>Bootstrap</em> en su version 4 debido a que mi intencion es llegar a la mayoria de dispositivos de uso frecuente. Aun habiendo dominado <em>flexbox</em>, y el entendimiento de las <em>media-queries</em>, es inmensa la cantidad de dispositivos que existen. Por eso, para no perder y seguir siendo <em>responsive</em>, me decidi por utilizar este framework. En poco tiempo estare utilizando <em>Less</em> como preprocesador de CSS.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <img id="nomo-img" src="asset/img/nomo.png" alt="tecnologia" class="img-fluid">
-            <div id="nomo-text" class="text-center">
-              <p>Pese que aun no los domino, me gusta la idea de agregar tanto a <em>Node.js</em> como <em>Mongo DB</em>, por que quiero mostrarles a donde quiero llegar como profesional. Cuando me encuentre dentro del area cambiare este texto, por el momento me mantengo mejorando mi codigo de <em>Javascript</em>.</p>
-            </div>
-          </div>
-        </div>
+      <h5>Bootstrap 4 (Framework)</h5>
+      <p class="lead">Manejo: Familiarizado</p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 40%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Boostrap</div>
+      </div>
+
+      <hr>
+
+      <h5>JS</h5>
+      <p class="lead">Manejo: Familiarizado</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+      </div>
+      <h5>JQuery (Framework)</h5>
+      <p class="lead">Manejo: Iniciado</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Boostrap</div>
+      </div>
+      <hr>
+      <h4 class="text-center">Back-end</h5>
+      <h5>Node.js</h5>
+      <p class="lead">Manejo: Iniciado</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 1%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <hr>
+
+      <h5>Mongo DB</h5>
+      <p class="lead">Manejo: Iniciado</p>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 1%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
   </section>
 
-  <!--Imagen Divisoria1-->
-  <div id="img-pro"></div>
-
-  <!--Seccion de Proyectos-->
-  <section id="proyectos">
+  <!--Texto Movil-->
+  <section id="text-movil">
     <div class="container">
-      <div class="row justify-content-center">
-        <h3 class="text-center display-3">Nuestros Trabajos</h3>
-        <p>Actualmente no tenemos ningun trabajo en linea para mostrar, lo sentimos mucho, pronto estaremos subiendo alguno. </p>
+        <div id="comentario-content" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item active pad text-center">
+              <img src="asset/img/ninanbu3.svg" alt="Ninanbu">
+            </div>
+
+            <div class="carousel-item pad">
+              <img src="asset/img/ninanbu3.svg" alt="Ninanbu">
+            </div>
+
+            <div class="carousel-item pad">
+              <img src="asset/img/ninanbu3.svg" alt="Ninanbu">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#comentario-content" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span></a>
+
+              <a class="carousel-control-next" href="#comentario-content" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span></a>
+
+        </div>
+    </div>
+  </section>
+
+  <!--Seccion de Blog-->
+  <section id="blog">
+    <div class="container-fluid">
+      <h3 class="display-3 text-center">Contenido Blog</h3>
+      <p class="lead text-center">Visiten nuestro <strong><a href="http://ninanbu.com/blog" target="_blank">Blog</a></strong> para enterarse de todo lo que estamos haciendo!</p>
+
+      <div class="row justify-content-center pad-blog">
+        <div id="blog1" class="card mar-blog col-sm-6 col-md-3">
+          <div class="card-block">
+            <h3 class="card-title">CSS3 FlexBox</h3>
+            <p class="card-text">En esta entrada quiero dejar marcado lo que aprendí referido al famoso “Flexbox”.Con Flexbox, vamos a poder posicionar mucho mejor el contenido de nuestras paginas con pocas lineas de código, pudiendo evitar el uso de Float. </p>
+            <a href="http://ninanbu.com/blog/flexbox/" target="_blank" class="btn btn-primary">Leer Mas...</a>
+              <div class="card-footer text-muted">17 Mayo 2017</div>
+          </div>
+        </div>
+        <div id="blog2" class="card mar-blog col-sm-6 col-md-3">
+          <div class="card-block">
+            <h3 class="card-title">Guia Basica HTML5</h3>
+            <p class="card-text">En esta guía me gustaría poder dejarles una fuente de cada una de las etiquetas que utiliza HTML en su versión 5. Espero les guste, voy a estar trabajando a diario para terminarla y así poder agregar mas contenido.</p>
+            <a href="http://ninanbu.com/blog/category/guias-generales/" target="_blank" class="btn btn-primary">Leer Mas...</a>
+              <div class="card-footer text-muted">21 Mayo 2017</div>
+          </div>
+        </div>
+        <div id="blog3" class="card mar-blog col-sm-6 col-md-3">
+          <div class="card-block">
+            <h3 class="card-title">Proximamente</h3>
+            <p class="card-text">Estamos creando nuevo contenido, si te interesa que escribamos de algun tema en especial por favor hazmelo saber y con gusto nos ponemos en accion.</p>
+            <a href="#" class="btn btn-primary">Leer Mas...</a>
+              <div class="card-footer text-muted">Aun no..</div>
+          </div>
+        </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <figure class="figure">
-            <img src="asset/img/logo.png" alt="en espera" class="img-thumbnail img-color">
-            <figcaption class="figure-caption text-left text-img">Podrias ser el proximo</figcaption>
-          </figure>
+
+      <div class="row justify-content-center pad-blog">
+        <div id="blog4" class="card mar-blog col-sm-6 col-md-2">
+          <div class="card-block">
+            <h3 class="card-title">Proximamente</h3>
+            <p class="card-text">Estamos creando nuevo contenido, si te interesa que escribamos de algun tema en especial por favor hazmelo saber y con gusto nos ponemos en accion.</p>
+            <a href="#" class="btn btn-primary">Leer Mas...</a>
+              <div class="card-footer text-muted">Aun no..</div>
+          </div>
         </div>
-        <div class="col-md-3">
-          <figure class="figure">
-            <img src="asset/img/logo.png" alt="en espera" class="img-thumbnail img-color">
-            <figcaption class="figure-caption text-left text-img">Podrias ser el proximo</figcaption>
-          </figure>
+        <div id="blog5" class="card mar-blog col-sm-6 col-md-2">
+          <div class="card-block">
+            <h3 class="card-title">Proximamente</h3>
+            <p class="card-text">Estamos creando nuevo contenido, si te interesa que escribamos de algun tema en especial por favor hazmelo saber y con gusto nos ponemos en accion.</p>
+            <a href="#" class="btn btn-primary">Leer Mas...</a>
+              <div class="card-footer text-muted">Aun no..</div>
+          </div>
         </div>
-        <div class="col-md-3">
-          <figure class="figure">
-            <img src="asset/img/logo.png" alt="en espera" class="img-thumbnail img-color">
-            <figcaption class="figure-caption text-left text-img">Podrias ser el proximo</figcaption>
-          </figure>
+        <div id="blog6" class="card mar-blog col-sm-6 col-md-2">
+          <div class="card-block">
+            <h3 class="card-title">Proximamente</h3>
+            <p class="card-text">Estamos creando nuevo contenido, si te interesa que escribamos de algun tema en especial por favor hazmelo saber y con gusto nos ponemos en accion.</p>
+            <a href="#" class="btn btn-primary">Leer Mas...</a>
+              <div class="card-footer text-muted">Aun no..</div>
+          </div>
         </div>
       </div>
     </div>
@@ -165,7 +252,9 @@
   </footer>
 
   <!--Apartado de Javascript-->
-  <script src="js/index.js" charset="utf-8"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
 
   <!--GoogleAnalytics-->
   <script>
