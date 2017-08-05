@@ -26,7 +26,7 @@
           <a class="nav-link" href="#studio">Sobre Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#habilidades">Tecnologias</a>
+          <a class="nav-link" href="#habilidades">Tecnologías</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#proyectos">Portafolio</a>
@@ -80,84 +80,74 @@
   <section id="habilidades">
     <div class="container">
       <h3 class="display-3">Habilidades</h3>
-      <hr>
-      <h4 class="text-center">Front-end</h4>
-      <h5>HTML5</h5>
-      <p class="lead">Manejo: Avanzado</p>
-      <div class="progress">
-        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
-      </div>
+      <div id="accordion" role="tablist" aria-multiselectable="true">
 
-      <hr>
-
-      <h5>CSS3</h5>
-      <p class="lead">Manejo: Avanzado</p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 70%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
-      </div>
-      <h5>Bootstrap 4 (Framework)</h5>
-      <p class="lead">Manejo: Familiarizado</p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 40%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Boostrap</div>
-      </div>
-
-      <hr>
-
-      <h5>JS</h5>
-      <p class="lead">Manejo: Familiarizado</p>
-      <div class="progress">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
-      </div>
-      <h5>JQuery (Framework)</h5>
-      <p class="lead">Manejo: Iniciado</p>
-      <div class="progress">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Boostrap</div>
-      </div>
-      <hr>
-      <h4 class="text-center">Back-end</h4>
-      <h5>Node.js</h5>
-      <p class="lead">Manejo: Iniciado</p>
-      <div class="progress">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 1%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-
-      <hr>
-
-      <h5>Mongo DB</h5>
-      <p class="lead">Manejo: Iniciado</p>
-      <div class="progress">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 1%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
-    </div>
-  </section>
-
-  <!--Texto Movil-->
-  <section id="text-movil">
-    <div class="container">
-        <div id="comentario-content" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-
-            <div class="carousel-item active pad text-center">
-              <img src="asset/img/ninanbu3.svg" alt="Ninanbu" class="img-fluid">
-            </div>
-
-            <div class="carousel-item pad">
-              <img src="asset/img/ninanbu3.svg" alt="Ninanbu" class="img-fluid">
-            </div>
-
-            <div class="carousel-item pad">
-              <img src="asset/img/ninanbu3.svg" alt="Ninanbu" class="img-fluid">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Front-End
+              </a>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block text-center">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>Bootstrap 4</p>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#comentario-content" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span></a>
-
-              <a class="carousel-control-next" href="#comentario-content" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span></a>
-
         </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Lenguajes de programación
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-block text-center">
+              <p>Javascript</p>
+              <p>C# -> Proximo a iniciar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Bases de Datos
+              </a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-block text-center">
+              <p>MySQL</p>
+              <p>SQL Server -> Proximo a iniciar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingFour">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                Sistemas Operativos
+              </a>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="card-block text-center">
+              <p>Windows</p>
+              <p>Linux -> Proximo a iniciar</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -168,6 +158,7 @@
       <p class="lead text-center">Visiten nuestro <strong><a href="http://ninanbu.com/blog" target="_blank">Blog</a></strong> para enterarse de todo lo que estamos haciendo!</p>
 
       <div class="row justify-content-center pad-blog">
+
         <div id="blog1" class="card mar-blog col-sm-12 col-md-4">
           <div class="card-block">
             <h3 class="card-title">CSS3 FlexBox</h3>
@@ -176,14 +167,16 @@
               <div class="card-footer text-muted">17 Mayo 2017</div>
           </div>
         </div>
+
         <div id="blog2" class="card mar-blog col-sm-12 col-md-4">
           <div class="card-block">
-            <h3 class="card-title">Guia Basica HTML5</h3>
-            <p class="card-text">En esta guía me gustaría poder dejarles una fuente de cada una de las etiquetas que utiliza HTML en su versión 5. Espero les guste, voy a estar trabajando a diario para terminarla y así poder agregar mas contenido. Para poder entrar en detalle de cada una....</p>
+            <h3 class="card-title">Base de Datos SQL</h3>
+            <p class="card-text">Una sección especial dedicada únicamente al uso de base de datos SQL.</p><br><br>
             <a href="http://ninanbu.com/blog/category/guias-generales/" target="_blank" class="btn btn-primary">Leer Mas...</a>
               <div class="card-footer text-muted">21 Mayo 2017</div>
           </div>
         </div>
+
         <div id="blog3" class="card mar-blog col-sm-12 col-md-4">
           <div class="card-block">
             <h3 class="card-title">Proximamente</h3>
@@ -192,7 +185,9 @@
               <div class="card-footer text-muted">Aun no..</div>
           </div>
         </div>
+
       </div>
+
       <hr>
     </div>
   </section>
@@ -206,7 +201,7 @@
 
       <div class="row justify-content-between">
         <div class="col-xs-12 col-md-5">
-          <p>Si lo deseas <span>podrias comunicarte via </span> <a href="mailto:ninanbudevelop@gmail.com?Subject=Consulta%20Ninanbu" target="_top">Mail</a> y nosotros a la brevedad te vamos a estar respondiendo. Si queres una respuesta mas rapida, podrias comunicarte a mi <span>WhatsApp </span>:<span> (54)011-3206-0512</span>. Tambien podrias hacerlo desde alguna de mis redes sociales mencionadas en esta seccion.</p>
+          <p>Si lo deseas <span>podrías comunicarte vía </span> <a href="mailto:ninanbudevelop@gmail.com?Subject=Consulta%20Ninanbu" target="_top">Mail</a> y nosotros a la brevedad te vamos a estar respondiendo. También podes hacerlo desde alguna de mis redes sociales mencionadas en esta sección.</p>
         </div>
         <div class="col-xs-12 col-md-5">
           <ul class="list-unstyled">
@@ -227,7 +222,7 @@
 
   <!--Apartado de Javascript-->
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="js/index.js"></script>
 
   <!--GoogleAnalytics-->
