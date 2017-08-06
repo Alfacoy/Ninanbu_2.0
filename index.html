@@ -4,9 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ninanbu 2.0</title>
-    <link rel="icon" type="image/png" href="asset/img/favicon.ico">
+  <meta name="keywords" content="html5, css3, javascript, sql, bootstrap, ninanbu, desarrollo web">
+  <meta name="author" content="ninanbu.com">
+  <meta name="owner" content="Brian Ezequiel Durand">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Somos un estudio independiente dedicados al desarrollo web y aplicaciones de escritorio radicados en Buenos Aires.">
+
+  <title>Ninanbu | Desarrollo Web</title>
+
   <!--Apartado de CSS-->
+  <link rel="icon" type="image/png" href="asset/img/favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -18,24 +25,21 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand" href="#">Ninanbu</a>
+    <a class="navbar-brand" href="http://ninanbu.com">Ninanbu</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#studio">Sobre Nosotros</a>
+          <a class="nav-link" href="#studio">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#habilidades">Tecnologías</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#proyectos">Portafolio</a>
+          <a class="nav-link" href="#habilidades">Skills</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://ninanbu.com/blog" target="_blank">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
+          <a class="nav-link" href="#contacto">Contact</a>
         </li>
       </ul>
     </div>
@@ -48,11 +52,11 @@
   <section id="studio">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center"><h1 class="display-1 text-center">Ninanbu Studio</h1></div>
+        <div class="col-md-12 text-center"><h1 class="display-1 text-center">Ninanbu Studio</h1><h2>Web &  Desk</h2></div>
         <div class="col-md-12 text-center">
-          <p class="lead">Bienvenido viajero! <strong>Ninanbu</strong> es un estudio independiente dedicado a el desarrollo de apps web/moviles ya sean personales o empresariales.
-          Como veras, aun somos un emprendimiento pequeño, pero aspiramos a crear una gran comunidad a nuestro alrededor. Espero disfruten la estadia en nuestra pagina!</p>
-          <p class="text-warning font-weight-bold lead">Visitanos a diario para ver mas <a href="http://ninanbu.com/blog/updates/" target="_blank">actualizaciones de la pagina</a>, aun estamos en construccion!</p>
+          <p class="lead">Bienvenido viajero! <strong>Ninanbu</strong> es un estudio independiente dedicado a la investigación y desarrollo de aplicaciones web o de escritorio, ya sean tanto personales como empresariales.
+          Podrás ver que aun somos un emprendimiento pequeño, pero aspiramos a crear una gran comunidad a nuestro alrededor. Espero disfruten la estadia en nuestra pagina!</p>
+          <p class="text-warning font-weight-bold lead">Visítanos a diario para ver mas <a href="http://ninanbu.com/blog/updates/" target="_blank">actualizaciones de la pagina</a>, aun estamos en construcción!</p>
         </div>
       </div>
     </div>
@@ -62,16 +66,18 @@
   <section id="about">
     <div class="container">
       <div class="row justify-content-center">
-        <h3 class="display-3 text-center">Quien soy?</h3>
+        <h3 class="display-3 text-center">¿Quién soy? </h3>
       </div>
       <div class="row align-items-center">
         <div class="col-md-8">
-          <p class="lead">Me llamo <em>Brian</em>, tengo 27 años y actualmente me encuentro ubicado en la Ciudad de Avellaneda(Argentina-Buenos Aires). Soy un amante de la naturaleza con todo lo que la integra y fan de los videojuegos de RPG. Tengo como una meta personal a futuro sacar un videojuego para pc en <strong>Unity</strong>.</p>
-          <p class="lead">Soy un estudiante del desarrollo de aplicaciones web/moviles, con lo cual en este momento mi experiencia es basica en cuanto a Node.js y mongoDB, pero se que con el tiempo voy a estar ofreciendo mejores resultados en cuanto a la materia. Hoy dia mi fuente de trabajo es otro area que no es la tecnologia, si les interesa mi perfil les dejo mi <strong><a href="http://ninanbu.com/curriculum.pdf" target="_blank">Curriculum</a></strong>. Muchas gracias por leer!</p>
+          <p class="lead">Me llamo <em>Brian</em>, tengo 27 años y resido en la Ciudad de Avellaneda (Argentina-Buenos Aires). Soy un amante de la naturaleza con todo lo que la integra y fan de los videojuegos. Tengo como meta personal a futuro sacar un título para pc en <strong>Unity</strong>.</p>
+          <p class="lead">Hoy día mi fuente de ingresos es otro área que difiere de tecnología, si les interesa mi perfil les dejo mi <a href="http://ninanbu.com/curriculum.pdf">Curriculum</a>, muchas gracias por leer.</p>
         </div>
-        <div class="col-md-4">
-          <img id="miFoto" src="asset/img/iam.jpg" alt="volta" class="img-fluid img-thumbnail img-250">
-        </div>
+
+          <figure class="col-md-4">
+            <img id="miFoto" src="asset/img/iam.jpg" alt="volta" class="img-fluid img-thumbnail img-250">
+          </figure>
+
       </div>
     </div>
   </section>
@@ -85,7 +91,7 @@
         <div class="card">
           <div class="card-header" role="tab" id="headingOne">
             <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <a class="collapsed text-primary" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                 Front-End
               </a>
             </h5>
@@ -102,7 +108,7 @@
         <div class="card">
           <div class="card-header" role="tab" id="headingTwo">
             <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <a class="collapsed text-success" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Lenguajes de programación
               </a>
             </h5>
@@ -110,7 +116,7 @@
           <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="card-block text-center">
               <p>Javascript</p>
-              <p>C# -> Proximo a iniciar</p>
+              <p>C# -> Próximo a iniciar.</p>
             </div>
           </div>
         </div>
@@ -118,7 +124,7 @@
         <div class="card">
           <div class="card-header" role="tab" id="headingThree">
             <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <a class="collapsed text-warning" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Bases de Datos
               </a>
             </h5>
@@ -126,7 +132,7 @@
           <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="card-block text-center">
               <p>MySQL</p>
-              <p>SQL Server -> Proximo a iniciar</p>
+              <p>SQL Server -> Próximo a iniciar.</p>
             </div>
           </div>
         </div>
@@ -134,7 +140,7 @@
         <div class="card">
           <div class="card-header" role="tab" id="headingFour">
             <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+              <a class="collapsed text-danger" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                 Sistemas Operativos
               </a>
             </h5>
@@ -142,7 +148,7 @@
           <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
             <div class="card-block text-center">
               <p>Windows</p>
-              <p>Linux -> Proximo a iniciar</p>
+              <p>Linux -> Próximo a iniciar.</p>
             </div>
           </div>
         </div>
@@ -154,35 +160,32 @@
   <!--Seccion de Blog-->
   <section id="blog">
     <div class="container-fluid">
-      <h3 class="display-3 text-center">Contenido Blog</h3>
+      <h3 class="display-3 text-center">Lo más relevante en nuestro Blog</h3>
       <p class="lead text-center">Visiten nuestro <strong><a href="http://ninanbu.com/blog" target="_blank">Blog</a></strong> para enterarse de todo lo que estamos haciendo!</p>
 
       <div class="row justify-content-center pad-blog">
 
         <div id="blog1" class="card mar-blog col-sm-12 col-md-4">
           <div class="card-block">
-            <h3 class="card-title">CSS3 FlexBox</h3>
+            <h4 class="card-title">CSS3 FlexBox</h4>
             <p class="card-text">En esta entrada quiero dejar marcado lo que aprendí referido al famoso “Flexbox”.Con Flexbox, vamos a poder posicionar mucho mejor el contenido de nuestras paginas con pocas lineas de código, pudiendo evitar el uso de float... </p>
-            <a href="http://ninanbu.com/blog/flexbox/" target="_blank" class="btn btn-primary">Leer Mas...</a>
-              <div class="card-footer text-muted">17 Mayo 2017</div>
+            <a href="http://ninanbu.com/blog/flexbox/" target="_blank" class="btn btn-primary">Seguir leyendo...</a>
           </div>
         </div>
 
         <div id="blog2" class="card mar-blog col-sm-12 col-md-4">
           <div class="card-block">
-            <h3 class="card-title">Base de Datos SQL</h3>
+            <h4 class="card-title">Base de Datos</h4>
             <p class="card-text">Una sección especial dedicada únicamente al uso de base de datos SQL.</p><br><br>
-            <a href="http://ninanbu.com/blog/category/guias-generales/" target="_blank" class="btn btn-primary">Leer Mas...</a>
-              <div class="card-footer text-muted">21 Mayo 2017</div>
+            <a href="http://ninanbu.com/blog/category/guias-generales/sql/" target="_blank" class="btn btn-primary">Seguir leyendo...</a>
           </div>
         </div>
 
         <div id="blog3" class="card mar-blog col-sm-12 col-md-4">
           <div class="card-block">
-            <h3 class="card-title">Proximamente</h3>
-            <p class="card-text">Estamos creando nuevo contenido, si te interesa que escribamos de algun tema en especial por favor hazmelo saber y con gusto nos ponemos en accion.</p>
-            <a href="#" class="btn btn-primary">Leer Mas...</a>
-              <div class="card-footer text-muted">Aun no..</div>
+            <h4 class="card-title">Javascript</h4>
+            <p class="card-text">Todo lo referido a Javascript y su entorno va a estar detallado en esta sección.</p><br><br>
+            <a href="http://ninanbu.com/blog/category/guias-generales/js/" target="_blank" class="btn btn-primary">Seguir leyendo...</a>
           </div>
         </div>
 
@@ -201,21 +204,21 @@
 
       <div class="row justify-content-between">
         <div class="col-xs-12 col-md-5">
-          <p>Si lo deseas <span>podrías comunicarte vía </span> <a href="mailto:ninanbudevelop@gmail.com?Subject=Consulta%20Ninanbu" target="_top">Mail</a> y nosotros a la brevedad te vamos a estar respondiendo. También podes hacerlo desde alguna de mis redes sociales mencionadas en esta sección.</p>
+          <p>Si lo deseas <span>podrías comunicarte vía </span> <a href="mailto:ninanbudevelop@gmail.com?Subject=Consulta%20Ninanbu" target="_top" class="text-warning">Mail</a> y nosotros a la brevedad te vamos a estar respondiendo. También podes hacerlo desde alguna de mis redes sociales mencionadas en esta sección.</p>
         </div>
         <div class="col-xs-12 col-md-5">
           <ul class="list-unstyled">
-            <li><a href="https://www.facebook.com/alfacoy18/" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/ninanbu" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/brian-durand-b2b83a137/" target="_blank">Linkedin</a></li>
-            <li><a href="https://github.com/Alfacoy" target="_blank">Github</a></li>
+            <li><a href="https://www.facebook.com/alfacoy18/" target="_blank" class="text-warning">Facebook</a></li>
+            <li><a href="https://twitter.com/ninanbu" target="_blank" class="text-warning">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/brian-durand-b2b83a137/" target="_blank" class="text-warning">Linkedin</a></li>
+            <li><a href="https://github.com/Alfacoy" target="_blank" class="text-warning">Github</a></li>
           </ul>
         </div>
       </div>
 
 
       <div class="row justify-content-center text-center">
-        <p>©Copyright 2017 Ninanbu | Todos los derechos reservados.</p>
+        <p>©Copyright 2017 <a href="http://ninanbu.com" class="text-warning">Ninanbu</a> | Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
