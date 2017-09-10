@@ -2,6 +2,11 @@
 h3{color: #fff;}
 .img-250{height: 250px;width: 250px;}
 
+body{
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-family: 'Inconsolata', monospace;
+}
+
 html {
   font-size: 14px;
 }
